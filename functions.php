@@ -15,7 +15,49 @@
     register_nav_menu('primary', 'Primary Header Navigation');
   }
 
+  /**
+  * New walker class to extend Walker_Nav_Menu
+  * It adds 'nav-item' & 'nav-link' to li and a tags
+  *
+  */
+    function Mf_theme_register_nav_menu_class(){
+
+      class Mf_theme_nav_menu_walker extends Walker_Nav_Menu {
+
+        public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+          $object = $item->object;
+          $type = $item->type;
+          $title = $item->title;
+          $description = $item->description;
+          $permalink = $item->url;
+
+          $output .= "<li class='nav-item" .  implode(" ", $item->classes) . "'>";
+
+          //Add SPAN if no Permalink
+          if( $permalink && $permalink != '#' ) {
+            $output .= '<a class="nav-link" href="' . $permalink . '">';
+          } else {
+            $output .= '<span>';
+          }
+
+          $output .= $title;
+
+          if( $description != '' && $depth == 0 ) {
+            $output .= '<small class="description">' . $description . '</small>';
+          }
+
+          if( $permalink && $permalink != '#' ) {
+            $output .= '</a>';
+          } else {
+            $output .= '</span>';
+          }
+        }
+      }
+  }
+
   add_action('wp_enqueue_scripts', 'mf_theme_script_enqueue');
   add_action('init', 'mf_theme_setup');
+  add_action('wp_loaded','Mf_theme_register_nav_menu_class');
+
 
  ?>

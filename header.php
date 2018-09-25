@@ -16,23 +16,17 @@
           </button>
 
           <?php
-            $defaults = array(
-              'theme_location'  => '',
-              'menu'            => '',
-              'container'       => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id'    => '',
-              'menu_class'      => 'menu',
-              'menu_id'         => '',
-              'echo'            => true,
-              'fallback_cb'     => 'wp_page_menu',
-              'before'          => '',
-              'after'           => '',
-              'link_before'     => '',
-              'link_after'      => '',
-              'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>',
-              'depth'           => 0,
-              'walker'          => '');
-            wp_nav_menu($defaults);
+            wp_nav_menu(
+              array(
+                'container'       => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'menu_class'      => 'menu',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'items_wrap'      => '<ul class="navbar-nav ml-auto">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => new Mf_theme_nav_menu_walker
+              )
+            );
           ?>
         </nav>
