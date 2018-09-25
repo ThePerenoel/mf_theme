@@ -12,6 +12,7 @@
 
   function mf_theme_setup() {
     add_theme_support('menus');
+    register_nav_menu('primary', 'Primary Header Navigation');
   }
 
   add_action('wp_enqueue_scripts', 'mf_theme_script_enqueue');
