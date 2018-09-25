@@ -10,6 +10,11 @@
     wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array(), '1.0.0', true);
   }
 
+  function mf_theme_setup() {
+    add_theme_support('menus');
+  }
+
   add_action('wp_enqueue_scripts', 'mf_theme_script_enqueue');
+  add_action('init', 'mf_theme_setup');
 
  ?>
