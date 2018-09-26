@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+
+  /**
+    Template Name: Normal page
+   */
+
+   get_header();
+
+?>
 
 
 <main role="main" class="container">
@@ -12,9 +20,8 @@
               the_post();
         ?>
 
-          <div class="col-4 article-preview">
-              <p><?php the_content(); ?></p>
-          </div>
+            <h1><?php the_title(); ?></h1>
+            <p><?php the_content(); ?></p>
 
         <?php
             }

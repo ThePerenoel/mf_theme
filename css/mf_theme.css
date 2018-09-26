@@ -2,6 +2,7 @@ body {
   padding-top: 5rem;
   background-color: black;
   color: white;
+  font-family: 'Cardo', serif;
 }
 
 nav {
@@ -10,4 +11,11 @@ nav {
 
 #logo_mf {
   height: 20px;
+}
+
+.article-preview img{
+
+  width: 100%;
+  height: auto;
+
 }
