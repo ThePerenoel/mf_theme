@@ -13,9 +13,48 @@ nav {
   height: 20px;
 }
 
-.article-preview img{
 
+.thumbnails-row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    overflow-x: scroll;
+    min-height: 600px;
+}
+
+.article-preview {
+  margin-right: 20px;
+}
+.article-preview h4{
+      font-size: 2rem;
+}
+
+.article-preview img{
   width: 100%;
   height: auto;
+}
 
+.article-preview-caption {
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+.article-preview-caption p{
+  margin-top: -10px;
+}
+
+.article-thumbnail {
+  width: 700px;
+  height: 465px;
+  overflow:hidden;
+}
+
+.about-me-image{
+  background-image: url("../bg-image_about.jpg");
+  max-height: 600px;
+  background-size: cover;
+}
+
+.about-me-content{
+  margin-left: -100px;
 }

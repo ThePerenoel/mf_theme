@@ -59,5 +59,7 @@
   add_action('init', 'mf_theme_setup');
   add_action('wp_loaded','Mf_theme_register_nav_menu_class');
 
+  add_theme_support('post-formats', array('aside', 'image', 'video'));
+  add_theme_support('post-thumbnails');
 
  ?>
