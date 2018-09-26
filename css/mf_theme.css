@@ -58,3 +58,21 @@ nav {
 .about-me-content{
   margin-left: -100px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #404040;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #87416a , #ce6860);;
+
+}
