@@ -1,7 +1,7 @@
 <?php
 
   /**
-    Template Name: Normal page
+    Template Name: About me page
    */
 
    get_header();
