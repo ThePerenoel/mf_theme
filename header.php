@@ -12,7 +12,7 @@
       <body>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-          <a class="navbar-brand" href="https://getbootstrap.com/docs/4.1/examples/starter-template/#">
+          <a class="navbar-brand" href="<?php echo get_site_url() ?>">
             <img id="logo_mf" src="<?php echo get_template_directory_uri() . '/logo_mf.svg'; ?>">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

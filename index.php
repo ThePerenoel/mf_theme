@@ -22,7 +22,16 @@
                   </h1>
                   <p><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
                 </div>
-                <div class="article-caption-rectangle"><span>2017</span></div>
+                <div class="article-caption-rectangle">
+                  <span>
+                    <?php
+                      echo get_the_date( 'Y' )
+                      //$categories = get_the_category();
+                      //var_dump($categories["name"]);
+                      //echo $categories["name"];
+                    ?>
+                  </span>
+                </div>
               </div>
           </div>
           <div class="col-12">
