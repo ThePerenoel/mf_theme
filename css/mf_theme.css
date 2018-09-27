@@ -43,7 +43,16 @@ nav {
   margin-top: -10px;
 }
 
-.article-thumbnail {
+.article-preview-caption a{
+  color: white;
+}
+
+.article-preview-caption a:hover{
+  text-decoration: none;
+}
+
+
+.article-preview-thumbnail {
   width: 700px;
   height: 465px;
   overflow:hidden;
@@ -73,6 +82,58 @@ nav {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to right, #87416a , #ce6860);;
+    background-image: linear-gradient(to right, #87416a , #ce6860);
+}
 
+
+
+
+.article-thumbnail {
+  width: 100%;
+  max-height: 600px;
+  overflow:hidden;
+}
+
+.article-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.article-caption {
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.article-caption-title {
+  padding-left: 20px;
+padding-top: 20px;
+  display: block;
+}
+
+.article-caption-rectangle {
+  width: 5%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #87416a , #ce6860);
+  position: absolute;
+  right: 0;
+}
+
+.article-caption-rectangle span{
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.article-caption p{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.shown-image {
+    width: auto;
+    max-height: 500px;
 }

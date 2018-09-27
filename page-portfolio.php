@@ -30,8 +30,10 @@ $wp_query->is_home = false;
               the_post();
         ?>
           <div class="article-preview">
-              <div class="article-thumbnail">
+              <div class="article-preview-thumbnail ">
+                <a href="<?php the_permalink() ?>">
                   <?php the_post_thumbnail('large'); ?>
+                </a>
               </div>
               <div class="article-preview-caption">
                 <h4>
