@@ -61,11 +61,12 @@ nav {
 .about-me-image{
   background-image: url("../bg-image_about.jpg");
   max-height: 600px;
+  min-height: 500px;
   background-size: cover;
 }
 
 .about-me-content{
-  margin-left: -100px;
+  margin-left: -50px;
 }
 
 /* width */
@@ -77,7 +78,7 @@ nav {
 /* Track */
 ::-webkit-scrollbar-track {
     width: 5px;
-    background-color: #404040;
+    background-color: #000000;
 }
 
 /* Handle */
@@ -107,7 +108,7 @@ nav {
 
 .article-caption-title {
   padding-left: 20px;
-padding-top: 20px;
+  padding-top: 20px;
   display: block;
 }
 
