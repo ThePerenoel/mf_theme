@@ -25,10 +25,13 @@
                 <div class="article-caption-rectangle">
                   <span>
                     <?php
-                      echo get_the_date( 'Y' )
-                      //$categories = get_the_category();
-                      //var_dump($categories["name"]);
-                      //echo $categories["name"];
+                      $categories = get_the_category();
+                      if ($categories != NULL) {
+                        $category = $categories[0]->name;
+                        if ($category != "Non classé") {
+                          echo $category;
+                        }
+                      }
                     ?>
                   </span>
                 </div>
