@@ -27,9 +27,10 @@
                     <?php
                       $categories = get_the_category();
                       if ($categories != NULL) {
-                        $category = $categories[0]->name;
-                        if ($category != "Non classé") {
-                          echo $category;
+                        foreach ($categories as $key=>$category) {
+                          if($category->category_parent != 0) {
+                            echo $category->name;
+                          }
                         }
                       }
                     ?>
