@@ -19,7 +19,7 @@ $wp_query->is_home = false;
 ?>
 
 
-<main role="main" class="container">
+<main role="main" class="container-fluid">
 
   <div class="starter-template">
 

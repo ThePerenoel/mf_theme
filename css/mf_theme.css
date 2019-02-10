@@ -13,18 +13,13 @@ nav {
   height: 20px;
 }
 
-
 .thumbnails-row {
-    display: flex;
     margin-right: -15px;
     margin-left: -15px;
     overflow-x: scroll;
     min-height: 600px;
 }
 
-.article-preview {
-  margin-right: 20px;
-}
 .article-preview h4{
       font-size: 2rem;
 }
@@ -51,10 +46,9 @@ nav {
   text-decoration: none;
 }
 
-
 .article-preview-thumbnail {
-  width: 700px;
-  height: 465px;
+  width: 100%;
+  max-height: 465px;
   overflow:hidden;
 }
 
@@ -104,12 +98,16 @@ nav {
   background-color: white;
   color: black;
   display: flex;
+  margin-top: -60px;
+  height: 170px;
 }
 
 .article-caption-title {
   padding-left: 20px;
   padding-top: 20px;
   display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .article-caption-rectangle {
@@ -137,4 +135,18 @@ nav {
 .shown-image {
     width: auto;
     max-height: 500px;
+}
+
+@media screen and (min-width: 769px) {
+  .thumbnails-row {
+      display: flex;
+  }
+
+  .article-preview-thumbnail {
+    width: 700px;
+  }
+
+  .article-preview {
+    margin-right: 20px;
+  }
 }
