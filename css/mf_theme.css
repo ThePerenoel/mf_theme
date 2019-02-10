@@ -137,6 +137,10 @@ nav {
     max-height: 500px;
 }
 
+.navbar-toggler {
+  border-color: rgb(0,0,0);
+}
+
 @media screen and (min-width: 769px) {
   .thumbnails-row {
       display: flex;
