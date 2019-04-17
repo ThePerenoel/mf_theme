@@ -205,3 +205,25 @@ footer {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.home-page h1{
+  font-size: 7rem;
+}
+
+.home-page p {
+  max-width: 562px;
+  color: #FFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 34px;
+  margin-left: 7.25rem;
+}
+
+.home-page-body {
+  background: url('../background.png')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
