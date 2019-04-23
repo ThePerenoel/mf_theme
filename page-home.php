@@ -18,10 +18,10 @@
         </head>
       <body class="home-page-body">
 
-        <nav class="navbar navbar-dark fixed-top">
+        <nav class="navbar right fixed-top">
           <a class="navbar-brand" href="">
           </a>
-          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <?php
@@ -33,7 +33,7 @@
                   'menu_class'      => 'menu',
                   'echo'            => true,
                   'fallback_cb'     => 'wp_page_menu',
-                  'items_wrap'      => '<ul class="navbar-nav ml-auto">%3$s</ul>',
+                  'items_wrap'      => '<ul class="navbar-nav home-navbar-items ml-auto">%3$s</ul>',
                   'depth'           => 0,
                   'walker'          => new Mf_theme_nav_menu_walker
                 )
