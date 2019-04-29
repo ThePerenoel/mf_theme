@@ -251,3 +251,17 @@ footer {
   top: 45px;
     right: 30px;
 }
+
+@media screen and (max-width: 425px) {
+
+  .home-page p {
+    margin-left: 2.25rem;
+    font-size: 1.5rem;
+  }
+
+  .home-page h1{
+    font-size: 3rem;
+    margin-left: 1.5rem;
+  }
+
+}
