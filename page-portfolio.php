@@ -7,9 +7,11 @@
 get_header();
 
 $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; // get current page number
+$category_name = 'portfolio';
 $args = array(
 	'posts_per_page' => get_option('posts_per_page'), // the value from Settings > Reading by default
-	'paged'          => $current_page // current page
+	'paged'          => $current_page, // current page
+	'category_name'  => $category_name
 );
 query_posts( $args );
 
