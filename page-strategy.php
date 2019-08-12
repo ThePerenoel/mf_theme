@@ -25,25 +25,21 @@ $wp_query->is_home = false;
 
   <div class="starter-template">
 
-    <div class="thumbnails-row">
+    <div class="container">
       <?php
           if (have_posts()) {
             while (have_posts()) {
               the_post();
         ?>
-          <div class="article-preview">
-              <div class="article-preview-thumbnail ">
-                <a href="<?php the_permalink() ?>">
-                  <?php the_post_thumbnail('large'); ?>
-                </a>
-              </div>
-              <div class="article-preview-caption">
+          <div class="row no-gutters strategy">
+              <div class="col-8 strategy-preview-caption">
+								<p class="strategy-excerpt"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
                 <h4>
-                  <a href="<?php the_permalink() ?>">
                     <?php the_title();?>
-                  </a>
                 </h4>
-                <p><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+              </div>
+              <div class="col-4 strategy-article-link">
+								<p>Voir cette stratégie &#8594;</p>
               </div>
           </div>
 

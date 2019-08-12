@@ -252,6 +252,52 @@ footer {
     right: 30px;
 }
 
+.blog {
+  margin-left: 100px;
+}
+
+.blog-preview-thumbnail img {
+  max-width: 560px;
+  height: auto;
+}
+
+.blog-preview-thumbnail {
+  /* min-width: 600px; */
+}
+
+.blog-preview-caption {
+  margin-left: 40px;
+  max-height: 220px;
+  max-width: 711px;
+}
+
+.blog-preview-caption h4 {
+  font-size: 80px;
+}
+
+.strategy-preview-caption h4 {
+  font-size: 80px;
+}
+
+.strategy-article-link {
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 20px;
+  vertical-align: bottom;
+  text-align: right;
+}
+
+.strategy {
+  border-bottom: 1px solid rgba(200,200,200,0.2);
+}
+
+.strategy-excerpt {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #844144;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 @media screen and (max-width: 425px) {
 
   .home-page p {
