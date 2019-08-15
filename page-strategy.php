@@ -49,7 +49,9 @@ $wp_query->is_home = false;
               </div>
               <div class="col-4 strategy-article-link">
 								<div class="strategy-article-link-block">
-								<p>Voir cette stratégie &#8594;</p>
+								<a href="<?php the_permalink() ?>">
+									Voir cette stratégie  <span class="strategy-link-arrow">&#8594;</span>
+								</a>
 							</div>
               </div>
           </div>

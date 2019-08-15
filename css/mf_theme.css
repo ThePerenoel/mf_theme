@@ -301,8 +301,21 @@ footer {
 }
 
 .strategy-article-link-block {
-  vertical-align:middle;
-  display:inline-block;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    height: 100%;
+}
+
+.strategy-article-link-block a {
+  margin-bottom: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.strategy-article-link-block a .strategy-link-arrow {
+  margin-bottom: 2rem;
+  color: white;
 }
 
 @media screen and (max-width: 425px) {
