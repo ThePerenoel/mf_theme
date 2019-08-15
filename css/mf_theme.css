@@ -279,6 +279,19 @@ footer {
   font-size: 80px;
 }
 
+.strategy {
+  border-bottom: 1px solid rgba(200,200,200,0.2);
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+
+.strategy-excerpt {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #844144;
+  font-family: 'Montserrat', sans-serif;;
+}
+
 .strategy-article-link {
   font-size: 16px;
   letter-spacing: 0.16px;
@@ -287,15 +300,9 @@ footer {
   text-align: right;
 }
 
-.strategy {
-  border-bottom: 1px solid rgba(200,200,200,0.2);
-}
-
-.strategy-excerpt {
-  font-size: 20px;
-  text-transform: capitalize;
-  color: #844144;
-  font-family: 'Josefin Sans', sans-serif;
+.strategy-article-link-block {
+  vertical-align:middle;
+  display:inline-block;
 }
 
 @media screen and (max-width: 425px) {

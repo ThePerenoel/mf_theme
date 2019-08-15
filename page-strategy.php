@@ -33,13 +33,24 @@ $wp_query->is_home = false;
         ?>
           <div class="row no-gutters strategy">
               <div class="col-8 strategy-preview-caption">
-								<p class="strategy-excerpt"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
-                <h4>
+									<p class="strategy-excerpt">
+										<?php
+										if ( has_excerpt() ) {
+											echo get_the_excerpt();
+										} else {
+											 echo wp_get_attachment_caption(get_post_thumbnail_id());
+										}
+										?>
+
+									</p>
+								<h4>
                     <?php the_title();?>
                 </h4>
               </div>
               <div class="col-4 strategy-article-link">
+								<div class="strategy-article-link-block">
 								<p>Voir cette stratégie &#8594;</p>
+							</div>
               </div>
           </div>
 

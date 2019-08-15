@@ -7,6 +7,7 @@
                 <title>Mathilde Faivre Website</title>
                 <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
                 <?php wp_head(); ?>
         </head>
       <body>
