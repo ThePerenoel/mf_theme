@@ -318,6 +318,34 @@ footer {
   color: white;
 }
 
+.article-strategy-excerpt {
+  color: #844144;
+  font-family: Montserrat;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.article-strategy-title {
+  color: rgba(255,255,255,0.84);
+  font-family: Cardo;
+  font-size: 80px;
+  line-height: 110px;
+}
+
+.article-strategy-year {
+  color: rgba(255,255,255,0.5);
+  font-family: Cardo;
+  font-size: 50px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.article-strategy-year p {
+  margin-top: 36px;
+}
+
 @media screen and (max-width: 425px) {
 
   .home-page p {
