@@ -32,7 +32,7 @@
             </p>
           </div>
     </div>
-    <div class="col-12 the-article-content">
+    <div class="col-12 the-article-strategy-content">
       <p><?php the_content(); ?></p>
     </div>
   <?php

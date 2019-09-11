@@ -181,22 +181,28 @@ footer {
 
 .portfolio-article-footer {
   background-image: linear-gradient(to right, #87416a , #ce6860);
-  height: 100px;
+  height: 90px;
   width: 100%;
 }
 
 .portfolio-article-footer img {
-  max-height: 100px;
+  max-height: 90px;
   width: auto;
 }
 
 .portfolio-article-footer a {
   text-decoration: none;
-  color: white;
-  font-size:2em;
+  color: rgba(255,255,255,0.7);
+  font-family: Cardo;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .left-img-link {
+  margin-left: 10px;
+}
+
+.portfolio-article-footer a[rel~="prev"] {
   margin-left: 10px;
 }
 
@@ -205,7 +211,12 @@ footer {
   float: right;
 }
 
-.the-article-content {
+.portfolio-article-footer a[rel~="next"] {
+  margin-right: 10px;
+  float: right;
+}
+
+.the-article-content, .the-article-strategy-content {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -318,6 +329,14 @@ footer {
   color: white;
 }
 
+.portfolio-article-footer div {
+  margin: auto;
+}
+
+.portfolio-article-footer .row {
+  height: 100%;
+}
+
 .article-strategy-excerpt {
   color: #844144;
   font-family: Montserrat;
@@ -344,6 +363,24 @@ footer {
 
 .article-strategy-year p {
   margin-top: 36px;
+}
+
+.right-link {
+  text-align: right;
+}
+
+.the-article-strategy-content p {
+  color: #FFF;
+  font-family: Cardo;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.the-article-content p {
+  color: #FFFFFF;
+  font-family: Cardo;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 @media screen and (max-width: 425px) {

@@ -31,6 +31,16 @@
 
 </main>
 
-<?php load_template(TEMPLATEPATH . '/portfolio-article-footer.php');?>
+<?php
+
+if ($selected_category == "strategy") {
+  load_template(TEMPLATEPATH . '/strategy-article-footer.php');
+}
+
+if ($selected_category == "portfolio") {
+  load_template(TEMPLATEPATH . '/portfolio-article-footer.php');
+}
+
+?>
 
 <?php get_footer(); ?>
