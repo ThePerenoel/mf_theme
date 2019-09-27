@@ -26,13 +26,42 @@
           </div>
           <div class="main-menu">
             <div>
-              <div>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Strategy</a></li>
-                  <li><a href="#">About</a></li>
-                </ul>
+              <div class="col-3 fullscreen-menu-padding">
+                 <?php
+                    wp_nav_menu(
+                    array(
+                      'container'       => '',
+                      'container_class' => '',
+                      'container_id'    => '',
+                      'menu_class'      => '',
+                      'echo'            => true,
+                      'fallback_cb'     => 'wp_page_menu',
+                      'items_wrap'      => '<ul>%3$s</ul>',
+                      'depth'           => 0,
+                      'walker'          => ''
+                    )
+                  );
+                ?>
+              </div>
+              <div class="col-3">
+                <div class="menu-contact-title">
+                  Contact
+                </div>
+                <div>
+                  <a target="_blank" href="mailto:mathilde.faivre@gmail.com"> mathilde.faivre@gmail.com </a>
+                </div>
+                <div class="menu-contact-title social-title">
+                  Social
+                </div>
+                <div>
+                  Medium
+                  &#8226;
+                  Instagram
+                  &#8226;
+                  <a target="_blank" href="https://www.linkedin.com/in/mathilde-faivre-strategist">
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>

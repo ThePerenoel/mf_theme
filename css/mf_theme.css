@@ -301,11 +301,15 @@ footer {
   padding-bottom: 60px;
 }
 
-.strategy-excerpt {
+.strategy-excerpt, .menu-contact-title {
   font-size: 20px;
   text-transform: uppercase;
   color: #844144;
   font-family: 'Montserrat', sans-serif;;
+}
+
+.social-title {
+    margin-top: 40px;
 }
 
 .strategy-article-link {
@@ -508,7 +512,6 @@ footer {
 .nav-area .main-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
@@ -523,9 +526,21 @@ footer {
   opacity: 0;
   flex: none;
   align-items: center;
-  justify-content: center;
   transition: 0.5s ease;
   background: black;
   width: 200vw;
   height: 200vh;
+}
+
+.main-menu a {
+  color: white;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  font-size: 3.5rem;
+}
+
+.fullscreen-menu-padding {
+  padding-left: 80px;
 }
