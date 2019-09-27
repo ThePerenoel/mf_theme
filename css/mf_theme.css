@@ -1,5 +1,4 @@
 body {
-  padding-top: 5rem;
   background-color: black;
   color: white;
   font-family: 'Cardo', serif;
@@ -10,7 +9,8 @@ nav .navbar-dark{
 }
 
 #logo_mf {
-  height: 20px;
+  height: 40px;
+  padding-left: 10px;
 }
 
 .thumbnails-row {
@@ -222,7 +222,7 @@ footer {
 }
 
 .home-page h1{
-  font-size: 7rem;
+  font-size: 5em;
 }
 
 .home-page p {
@@ -230,9 +230,13 @@ footer {
   color: #FFF;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 34px;
   margin-left: 7.25rem;
+}
+
+.home-page p em {
+  font-size: 18px;
 }
 
 .home-page-body {
@@ -243,13 +247,14 @@ footer {
   background-size: cover;
 }
 
-.home-navbar-items {
-  float: right;
+.home-navbar-items, .navbar-items {
+  text-align: right;
   color: white;
   text-decoration: none;
+  padding-right: 13px;
 }
 
-.home-navbar-items a {
+.home-navbar-items a, .navbar-items a {
   color: white;
   text-decoration: none;
 }
@@ -379,8 +384,20 @@ footer {
 .the-article-content p {
   color: #FFFFFF;
   font-family: Cardo;
-  font-size: 20px;
+  font-size: 1.1em;
+  text-align: justify;
   line-height: 36px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.the-article-content p a {
+  color: #ce6860;
+}
+
+.the-article-content p a:hover {
+  color: #87416a;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 425px) {

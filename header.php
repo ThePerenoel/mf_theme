@@ -12,9 +12,9 @@
         </head>
       <body>
 
-        <nav class="navbar navbar-dark fixed-top">
+        <nav class="navbar navbar-dark">
           <a class="navbar-brand" href="<?php echo get_site_url() ?>">
-            <img id="logo_mf" src="<?php echo get_template_directory_uri() . '/logo_mf.svg'; ?>">
+            <img id="logo_mf" src="<?php echo get_template_directory_uri() . '/logo_mf_2.png'; ?>">
           </a>
           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
                   'menu_class'      => 'menu',
                   'echo'            => true,
                   'fallback_cb'     => 'wp_page_menu',
-                  'items_wrap'      => '<ul class="navbar-nav ml-auto">%3$s</ul>',
+                  'items_wrap'      => '<ul class="navbar-nav navbar-items ml-auto">%3$s</ul>',
                   'depth'           => 0,
                   'walker'          => new Mf_theme_nav_menu_walker
                 )
