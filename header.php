@@ -24,9 +24,9 @@
           <div class="nav-icon">
             <div></div>
           </div>
-          <div class="main-menu">
-            <div>
-              <div class="col-3 fullscreen-menu-padding">
+          <div class="main-menu container-fluid m-0 p-0">
+            <div class="row m-0">
+              <div class="col-sm-6 col-xs-12">
                  <?php
                     wp_nav_menu(
                     array(
@@ -43,7 +43,7 @@
                   );
                 ?>
               </div>
-              <div class="col-3">
+              <div class="col-sm-6 col-xs-12">
                 <div class="menu-contact-title">
                   Contact
                 </div>
