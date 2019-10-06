@@ -54,9 +54,13 @@
                   Social
                 </div>
                 <div>
-                  Medium
+                  <a target="_blank" href="https://medium.com/@mathildefaivre6">
+                    Medium
+                  </a>
                   &#8226;
-                  Instagram
+                  <a target="_blank" href="https://www.instagram.com/lens_of_june/">
+                    Instagram
+                  </a>
                   &#8226;
                   <a target="_blank" href="https://www.linkedin.com/in/mathilde-faivre-strategist">
                     LinkedIn

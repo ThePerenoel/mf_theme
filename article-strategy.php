@@ -5,7 +5,7 @@
         the_post();
   ?>
     <div class="row">
-          <div class="col-9">
+          <div class="col-sm-9">
             <p class="article-strategy-excerpt"><?php
             if ( has_excerpt() ) {
               echo get_the_excerpt();
@@ -17,7 +17,7 @@
                 <?php the_title();?>
             </h1>
           </div>
-          <div class="col-3 article-strategy-year">
+          <div class="col-sm-3 article-strategy-year">
             <p>
               <?php
                 $categories = get_the_category();

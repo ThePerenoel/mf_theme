@@ -32,7 +32,7 @@ $wp_query->is_home = false;
               the_post();
         ?>
           <div class="row no-gutters strategy">
-              <div class="col-8 strategy-preview-caption">
+              <div class="col-sm-8 strategy-preview-caption">
 									<p class="strategy-excerpt">
 										<?php
 										if ( has_excerpt() ) {
@@ -47,7 +47,7 @@ $wp_query->is_home = false;
                     <?php the_title();?>
                 </h4>
               </div>
-              <div class="col-4 strategy-article-link">
+              <div class="col-sm-4 strategy-article-link">
 								<div class="strategy-article-link-block">
 								<a href="<?php the_permalink() ?>">
 									Voir cette stratégie  <span class="strategy-link-arrow">&#8594;</span>

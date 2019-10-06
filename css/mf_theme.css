@@ -99,7 +99,7 @@ nav .navbar-dark{
   color: black;
   display: flex;
   margin-top: -60px;
-  height: 170px;
+  height: 150px;
 }
 
 .article-caption-title {
@@ -116,6 +116,7 @@ nav .navbar-dark{
   background-image: linear-gradient(to bottom, #87416a , #ce6860);
   position: absolute;
   right: 0;
+  min-width: 30px;
 }
 
 .article-caption-rectangle span{
@@ -292,7 +293,7 @@ footer {
 }
 
 .strategy-preview-caption h4 {
-  font-size: 80px;
+  font-size: 4.5rem;
 }
 
 .strategy {
@@ -302,7 +303,7 @@ footer {
 }
 
 .strategy-excerpt, .menu-contact-title {
-  font-size: 20px;
+  font-size: 1.15rem;
   text-transform: uppercase;
   color: #844144;
   font-family: 'Montserrat', sans-serif;;
@@ -358,7 +359,7 @@ footer {
 .article-strategy-title {
   color: rgba(255,255,255,0.84);
   font-family: Cardo;
-  font-size: 80px;
+  font-size: 4.5rem;
   line-height: 110px;
 }
 
@@ -383,6 +384,7 @@ footer {
   font-family: Cardo;
   font-size: 20px;
   line-height: 32px;
+  text-align: justify;
 }
 
 .the-article-content p {
@@ -414,6 +416,24 @@ footer {
   .home-page h1{
     font-size: 3rem;
     margin-left: 1.5rem;
+  }
+
+  .the-article-content p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .the-article-content, .the-article-strategy-content {
+      margin-top: 0;
+      margin-bottom: 50px;
+  }
+
+  .article-caption-title {
+    padding-top: 10px;
+  }
+
+  .article-strategy-year p {
+    margin-top: 0;
   }
 
 }
@@ -540,4 +560,8 @@ footer {
 
 .fullscreen-menu-padding {
   padding-left: 80px;
+}
+
+.starter-template {
+  margin-top: 75px;
 }
