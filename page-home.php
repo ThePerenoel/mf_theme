@@ -18,7 +18,7 @@
         </head>
       <body class="home-page-body">
 
-        <nav class="navbar right fixed-top">
+        <nav class="navbar right mt-5">
           <a class="navbar-brand" href="">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
 
 <main role="main" class="container">
 
-  <div class="starter-template">
+  <div class="starter-template-home">
 
     <div class="row home-page">
       <?php
@@ -51,7 +51,7 @@
             while (have_posts()) {
               the_post();
         ?>
-              <div class="col-9">
+              <div class="col-11">
                 <p><?php the_content(); ?></p>
               </div>
 
