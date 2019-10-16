@@ -442,6 +442,10 @@ footer {
     height: auto;
   }
 
+  .article-thumbnail {
+    max-height: 250px;
+  }
+
 }
 
 
