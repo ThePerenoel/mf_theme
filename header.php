@@ -2,6 +2,13 @@
 
 <html lang="fr">
         <head>
+
+          <meta property="og:url"                content="https://mathildefaivre.com" />
+          <meta property="og:type"               content="website" />
+          <meta property="og:title"              content="Mathile Faivre, Brand & UX Strategist" />
+          <meta property="og:description"        content="Brand & UX Strategist, j’allie au quotidien les méthodologies UX et Design Thinking" />
+          <meta property="og:image"              content=<?php echo get_template_directory_uri() . '/screenshot.png'; ?> />
+
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 <title>Mathilde Faivre Website</title>
