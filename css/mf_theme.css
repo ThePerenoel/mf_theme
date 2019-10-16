@@ -32,6 +32,7 @@ nav .navbar-dark{
 .article-preview-caption {
   margin-left: 30px;
   margin-top: -10px;
+  position: relative;
 }
 
 .article-preview-caption p{
@@ -580,4 +581,13 @@ footer {
   font-family: Montserrat;
   letter-spacing: 1px;
   line-height: 20px;
+}
+
+.article-thumbnail {
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 464px;
 }

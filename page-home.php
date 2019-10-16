@@ -19,8 +19,11 @@
       <body class="home-page-body">
 
         <nav class="navbar right mt-5">
-          <a class="navbar-brand" href="">
-          </a>
+          <div class="brand">
+            <a class="brand" href="<?php echo get_site_url() ?>">
+              <img id="logo_mf" src="<?php echo get_template_directory_uri() . '/logo_mf_2.png'; ?>">
+            </a>
+          </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
