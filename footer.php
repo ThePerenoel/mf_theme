@@ -22,7 +22,7 @@
              src=<?php echo get_template_directory_uri() . '/linkedin.svg'; ?>>
            </a>
            &#8226;
-           <a target="_blank" href="mailto:mathilde.faivre@gmail.com">
+           <a target="_blank" href="mailto:mathildefaivre6@gmail.com">
              <img style="height: 19px;"
              src=<?php echo get_template_directory_uri() . '/email.svg'; ?>>
            </a>
