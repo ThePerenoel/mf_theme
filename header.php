@@ -55,7 +55,7 @@
                   Contact
                 </div>
                 <div>
-                  <a target="_blank" href="mailto:mathilde.faivre6@gmail.com"> mathilde.faivre6@gmail.com </a>
+                  <a target="_blank" href="mailto:mathildefaivre6@gmail.com"> mathildefaivre6@gmail.com </a>
                 </div>
                 <div class="menu-contact-title social-title">
                   Social
